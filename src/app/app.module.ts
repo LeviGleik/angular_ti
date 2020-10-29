@@ -10,6 +10,8 @@ import { RegistroAtividadeComponent } from './registro-atividade/registro-ativid
 import { RegistroTurmaComponent } from './registro-turma/registro-turma.component';
 import { VisualizacaoPontuacaoComponent } from './visualizacao-pontuacao/visualizacao-pontuacao.component';
 import { VisualizacaoRespostaComponent } from './visualizacao-resposta/visualizacao-resposta.component';
+import { IndexComponent } from './index/index.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { VisualizacaoRespostaComponent } from './visualizacao-resposta/visualiza
     RegistroAtividadeComponent,
     RegistroTurmaComponent,
     VisualizacaoPontuacaoComponent,
-    VisualizacaoRespostaComponent
+    VisualizacaoRespostaComponent,
+    IndexComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

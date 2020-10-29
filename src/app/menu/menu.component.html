@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand col-auto" href="index.html">Início</a>
+	<div class="collapse navbar-collapse">
+		<ul class="navbar-nav mr-auto">
+		  <li ngbDropdown class="nav-item dropdown">
+		    <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="professor" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      Professor
+		    </a>
+		    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="professor">
+		      <a ngbDropdownItem class="dropdown-item" routerLink="registro-turma">Cadastrar turmas</a>
+		      <a ngbDropdownItem class="dropdown-item" routerLink="registro-atividade">Cadastrar atividades</a>
+		      <div class="dropdown-divider"></div>
+		      	<a ngbDropdownItem class="dropdown-item" routerLink="visualizacao-pontuacao">Visualizar pontuação e classificação</a>
+		    </div>
+		  </li>
+		  <li ngbDropdown class="nav-item dropdown">
+		    <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="aluno" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      Aluno
+		    </a>
+		    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="aluno">
+		      <a ngbDropdownItem class="dropdown-item" routerLink="matricular-turma">Matricular-se em turma</a>
+		      <a ngbDropdownItem class="dropdown-item" routerLink="realizar-atividade">Realizar atividade</a>
+		      <div class="dropdown-divider"></div>
+		      	<a ngbDropdownItem class="dropdown-item" routerLink="visualizacao-resposta">Visualizar repostas</a>
+		    </div>
+		  </li>
+		</ul>
+	</div>
+</nav>
