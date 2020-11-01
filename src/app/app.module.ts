@@ -12,6 +12,10 @@ import { VisualizacaoPontuacaoComponent } from './visualizacao-pontuacao/visuali
 import { VisualizacaoRespostaComponent } from './visualizacao-resposta/visualizacao-resposta.component';
 import { IndexComponent } from './index/index.component';
 import { MenuComponent } from './menu/menu.component';
+import { LoginComponent } from './login/login.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RegisterAlunoComponent } from './register-aluno/register-aluno.component';
+import { RegisterProfessorComponent } from './register-professor/register-professor.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +27,16 @@ import { MenuComponent } from './menu/menu.component';
     VisualizacaoPontuacaoComponent,
     VisualizacaoRespostaComponent,
     IndexComponent,
-    MenuComponent
+    MenuComponent,
+    LoginComponent,
+    RegisterAlunoComponent,
+    RegisterProfessorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

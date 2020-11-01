@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<a class="navbar-brand col-auto" href="index.html">Início</a>
+	<a class="navbar-brand col-auto" routerLink="">Início</a>
 	<div class="collapse navbar-collapse">
 		<ul class="navbar-nav mr-auto">
-		  <li ngbDropdown class="nav-item dropdown">
-		    <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="professor" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  <li ngbDropdown class="nav-item dropdown" display="dynamic">
+		    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="professor" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		      Professor
 		    </a>
 		    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="professor">
@@ -13,8 +13,8 @@
 		      	<a ngbDropdownItem class="dropdown-item" routerLink="visualizacao-pontuacao">Visualizar pontuação e classificação</a>
 		    </div>
 		  </li>
-		  <li ngbDropdown class="nav-item dropdown">
-		    <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="aluno" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  <li ngbDropdown class="nav-item dropdown" display="dynamic">
+		    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="aluno" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		      Aluno
 		    </a>
 		    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="aluno">
@@ -22,6 +22,18 @@
 		      <a ngbDropdownItem class="dropdown-item" routerLink="realizar-atividade">Realizar atividade</a>
 		      <div class="dropdown-divider"></div>
 		      	<a ngbDropdownItem class="dropdown-item" routerLink="visualizacao-resposta">Visualizar repostas</a>
+		    </div>
+		  </li>
+		</ul>
+		<ul class="navbar-nav ml-auto">
+			<a class="nav-link" routerLink="login">Login</a>
+		</ul>
+		<ul class="navbar-nav">
+			<li ngbDropdown class="nav-item dropdown" display="dynamic">
+				<a ngbDropdownToggle class="nav-link dropdown-toggle" id="register" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Register</a>
+		    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="register">
+		      <a ngbDropdownItem class="dropdown-item" routerLink="register-aluno">Aluno</a>
+		      <a ngbDropdownItem class="dropdown-item" routerLink="register-professor">Professor</a>
 		    </div>
 		  </li>
 		</ul>
